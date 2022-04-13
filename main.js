@@ -1,39 +1,36 @@
-
-function sayHi()
-{
-    const x = "Hello"
-    return x
+// function declaration
+function sayHi() {
+  const x = "Hello";
+  return x;
 }
 
-var test = function(num) {
-    return num;
-}
+// function expression
+var test = function (num) {
+  return num;
+};
 
-console.log(sayHi)
-console.log(sayHi())
-console.log(test)
-console.log(test(41))
-
-var setName = function(name){
-    return name;
-}
-
-console.log(setName("Magomet"))
+console.log(sayHi); // display function
+console.log(sayHi()); // call the function
+console.log(test); // display function itself
+console.log(test(41)); // call the funciton
 
 try {
-    const temp = 4
-    temp = 1
+  const temp = 4;
+  temp = 1; // will cause a error
 } catch (error) {
-    console.log(error)
+  console.log(error); // show that error in console and continue
 }
 
+// user is an object with property 'name'
 let user = {
-    name: "Magomet"
-}
+  name: "Magomet",
+};
 
-let admin = user
+let admin = user; // points to 'name'
 
-console.log("done")
-console.log(user.name)
-console.log(admin.name)
-console.log(user.z) // undefined
+console.log("done");
+
+if (user.hasOwnProperty("name")) console.log("user is " + user.name);
+
+console.log(admin.name);
+console.log(user.z); // undefined
