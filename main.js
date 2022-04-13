@@ -1,7 +1,8 @@
 
 function sayHi()
 {
-    let x = 0
+    const x = "Hello"
+    return x
 }
 
 var test = function(num) {
@@ -9,5 +10,6 @@ var test = function(num) {
 }
 
 console.log(sayHi)
+console.log(sayHi())
 console.log(test)
 console.log(test(41))
