@@ -27,4 +27,13 @@ try {
     console.log(error)
 }
 
+let user = {
+    name: "Magomet"
+}
+
+let admin = user
+
 console.log("done")
+console.log(user.name)
+console.log(admin.name)
+console.log(user.z) // undefined
