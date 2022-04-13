@@ -57,3 +57,25 @@ console.log(Math.trunc(10.5)); // 10
 
 // rounding with specific amount of numbers after floating point
 console.log(Math.round(10.52844 * 1000) / 1000); // 10.528
+
+let mumbling = "ahsdasdjasldqeqw";
+console.log(mumbling.length); // length of the string
+
+let emptyString = "";
+let notSoEmptyString = " ";
+console.log(Boolean(emptyString)); // is empty ?
+console.log(Boolean(notSoEmptyString));
+
+// here we get chars from the string and store them as an array
+let tempString = "test your code";
+let charOfTempString = tempString.split("");
+console.log(charOfTempString);
+
+// convert string to UPPERCASE and back to lowercase
+let lowerCaseString = "abcdefghijklmnopqrstuvwxyz";
+console.log(lowerCaseString.toLocaleUpperCase());
+console.log(lowerCaseString.toLowerCase());
+
+// check string for a specific word
+let includeString = "This string includes some words";
+console.log(includeString.includes("words")); // true
