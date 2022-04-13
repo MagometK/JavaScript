@@ -34,3 +34,26 @@ if (user.hasOwnProperty("name")) console.log("user is " + user.name);
 
 console.log(admin.name);
 console.log(user.z); // undefined
+
+let x = "14e";
+let num = parseInt(x, 10);
+console.log(typeof x);
+console.log(num);
+
+// nearest integer
+console.log(Math.round(10.45)); // 10
+console.log(Math.round(10.5)); // 11
+
+// smallest integer
+console.log(Math.floor(10.45)); // 10
+console.log(Math.floor(10.9)); // 10
+
+// biggest integer
+console.log(Math.ceil(10.45)); // 11
+console.log(Math.ceil(10.89)); // 11
+
+// drop all numbers after the floating point
+console.log(Math.trunc(10.5)); // 10
+
+// rounding with specific amount of numbers after floating point
+console.log(Math.round(10.52844 * 1000) / 1000); // 10.528
